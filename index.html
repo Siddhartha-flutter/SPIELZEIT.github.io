@@ -274,7 +274,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb1.jpg" class="img-responsive" alt="website template image">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                   </a></div>
@@ -285,7 +285,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb2.jpg" class="img-responsive" alt="website template image">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                   </a></div>
@@ -298,7 +298,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb3.jpg" class="img-responsive" alt="website template image">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                   </a></div>
@@ -309,7 +309,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb4.jpg" class="img-responsive" alt="website template image">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                 </div>
@@ -322,7 +322,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb5.jpg" class="img-responsive" alt="website template image" style="border-radius: 8%;">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                 </div>
@@ -333,7 +333,7 @@
                 <div class="imgoverlay text-light"><img src="popular-game-thumb6.jpg" class="img-responsive" alt="website template image" style="border-radius: 8%;">
                   <div class="overlay"><span class="overlaycolor"></span>
                     <div class="overlayinfo" style="margin-top:-11px;">
-                      <div class="play-btn"><a class="btn btn-link">Play Now</a></div>
+                      <div class="play-btn-2"><a class="btn btn-link">Play Now</a></div>
                     </div>
                   </div>
                 </div>
@@ -599,6 +599,7 @@
      }
     </script>
     <script>
+      var menu = document.getElementById("arrow");
       window.onscroll = function(){scrollit()};
       function scrollit()
       {
@@ -608,28 +609,15 @@
           document.getElementById("logo").style.maxWidth = "65%";
           document.getElementById("header").style.backgroundColor = "rgba(0, 193, 203, 0.6)";
           document.getElementById("header").style.backgroundBlendMode = "darken";
+          menu.style.display = "block";
         }
         else{
           document.getElementById("header").style.fontSize = "16px";
           document.getElementById("logo").style.maxWidth = "100%";
           document.getElementById("header").style.backgroundColor = "#00c2cb";
+          menu.style.display = "none";
         }
       }
-    </script>
-    <script>
-      var menu = document.getElementById("arrow");
-        window.onscroll = function(){scrollit()};
-        function scrollit()
-        {
-            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-            {
-                menu.style.display = "block";
-            }
-          else {
-            menu.style.display = "none";
-           
-        }
-    }
     </script>
     <script>
       $('.counterup').counterUp({
