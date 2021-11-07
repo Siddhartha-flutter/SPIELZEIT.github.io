@@ -17,7 +17,7 @@
 </head>
 <body class="bottom-animate">
   <div id="arrow" class="arrow_btn">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a id="arrow_btn" href="#"><i class="fa fa-arrow-up"></i></a>
   </div>
   <header>
     <div id="header" class="header" style="background-color: #00c2cb;">
@@ -410,6 +410,65 @@
           </div>
       </div>
   </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 marginbottom">
+          <div class="section_title text-center pt-85">
+            <h2>SCREENSHOT GALLERY</h2>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="entry-thumb marginbottom">
+            <div class="imgoverlay_2 text-light"><img src="gallery-1.jpg" class="img-responsive" alt="website template image" >
+              <div class="overlay"><span class="overlaycolor"></span>
+                <div class="overlayinfo" style="margin-top:-11px;">
+                  <h6>Just for glimpse</h6>
+                  <div class="play-btn-3"><a href="gallery-1.jpg" class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="entry-thumb marginbottom">
+            <div class="imgoverlay_2 text-light"><img src="gallery-2.jpg" class="img-responsive" alt="website template image" >
+              <div class="overlay"><span class="overlaycolor"></span>
+                <div class="overlayinfo" style="margin-top:-11px;">
+                  <h6>Just for glimpse</h6>
+                  <div class="play-btn-3"><a href="gallery-2.jpg" class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="entry-thumb marginbottom">
+            <div class="imgoverlay_2 text-light"><img src="gallery-4.jpg" class="img-responsive" alt="website template image" >
+              <div class="overlay"><span class="overlaycolor"></span>
+                <div class="overlayinfo" style="margin-top:-11px;">
+                  <h6>Just for glimpse</h6>
+                  <div class="play-btn-3"><a href="gallery-4.jpg" class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-12 transformation">
+          <div class="entry-thumb marginbottom">
+            <div class="imgoverlay_2 text-light"><img src="gallery-3.jpg" class="img-responsive" alt="website template image">
+              <div class="overlay"><span class="overlaycolor"></span>
+                <div class="overlayinfo" style="margin-top:-11px;">
+                  <h6>Just for glimpse</h6>
+                  <div class="play-btn-3"><a href="gallery-3.jpg" class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="testimonial_section">
     <div class="container">
       <div class="row">
@@ -473,6 +532,35 @@
         </div>
       </div>
   </div>
+  </section>
+  <section class="connect">
+    <div class="container-fluid" style="text-align: center;">
+      <h1>Simple & Clean One Page Template</h1>
+      <button type="button" class="btn btn-border-black btn-radius btn-lg" data-toggle="modal" data-target="#mymodal">Explore More</button>
+      <div class="fade modal" id="mymodal" style="z-index: 99999;">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">
+                <h1>CascadingNinja</h1>
+              </div>
+              <button type="button" class="btn" data-dismiss="modal" style="font-size: 18px;">&times;</button>
+            </div>
+            <div class="modal-body"><span>Ready to EXPLORE more Templates?</span>
+              <div class="imgoverlay text-light">
+                <a href="https://cascadingninja.com"><img src="cn.jpg" class="img-responsive" alt="website template image">
+                  <div class="overlay"><span class="overlaycolor"></span>
+                    <div class="overlayinfo" style="margin-top:-11px;">
+                      <h6>Click Me</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <footer class="footer_widgets">
     <div class="main_footer" style="background-color: #00c2cb;">
@@ -576,7 +664,6 @@
         </div>
     </div>
 </footer>
-     
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -605,8 +692,8 @@
       {
         if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
         {
-          document.getElementById("header").style.fontSize = "12px";
-          document.getElementById("logo").style.maxWidth = "65%";
+          document.getElementById("header").style.fontSize = "9px";
+          document.getElementById("logo").style.maxWidth = "50%";
           document.getElementById("header").style.backgroundColor = "rgba(0, 193, 203, 0.6)";
           document.getElementById("header").style.backgroundBlendMode = "darken";
           menu.style.display = "block";

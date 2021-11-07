@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Metal+Mania&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
 html{
     scroll-behavior: smooth;
@@ -194,7 +195,7 @@ img{
 }
 
 .play-btn a{
-    background-color: #000;
+    background-color: #333;
     color: #00c2cb;
     font-weight: 700;
     font-family: "Metal Mania", cursive;
@@ -226,6 +227,7 @@ img{
 
 .section_title h2 {
     font-size: 40px;
+    font-family: "Metal Mania", cursive;
     line-height: 54px;
     font-weight: bold;
 }
@@ -483,6 +485,14 @@ img{
     transition: top .3s ease;
 }
 
+.overlayinfo h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+}
+
+
 .play-btn-2 a{
     background-color:#00c2cb;
     color: #ffffff;
@@ -495,12 +505,116 @@ img{
 .play-btn-2 a:hover{
     background-color: #000;
     color: #00c2cb;
-    text-shadow: 3px 3px 0px #000;
+    text-shadow: 1px 1px 0px #ffffff;
     transition: all 0.3s ease-in-out;
+}
+
+.pt-85{
+    padding-top: 85px;
+    margin-bottom: 40px;
+}
+
+.imgoverlay_2 {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
+}
+
+.imgoverlay_2 img.img-responsive{
+    max-width: 100%;
+    width: 100%;
+}
+
+.imgoverlay_2 img {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+
+.imgoverlay_2 .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(Opacity=0)";
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    -ms-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.imgoverlay_2:hover .overlay{
+    opacity: 1;
+}
+
+.imgoverlay_2 .overlaycolor {
+    width: 100%;
+    height: 100%;
+    background: #00c2cb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(Opacity=80)";
+}
+
+.imgoverlay_2 .overlayinfo {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    -webkit-transition: top .3s ease;
+    -moz-transition: top .3s ease;
+    -o-transition: top .3s ease;
+    -ms-transition: top .3s ease;
+    transition: top .3s ease;
+}
+
+.overlayinfo h6 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+}
+
+.play-btn-3 a{
+    background-color:transparent;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Metal Mania", cursive;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+
+.play-btn-3 a:hover{
+    background-color: #000;
+    color: #00c2cb;
+    text-shadow: 1px 1px 0px #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.transformation{
+    transform: translate(0, -315px);
 }
 
 .testimonial_section {
     padding: 124px 0 150px;
+    margin-top: -300px;
     position: relative;
 }
 
@@ -574,6 +688,52 @@ img{
 
 .single_blog .blog_content a{
     color: #00c2cb;
+}
+
+.connect {
+    padding: 15px 0 40px 0;
+}
+
+.connect h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.btn-border-black {
+    border: 1px solid #333;
+    color: #00c2cb;
+    font-family: "Metal Mania", cursive;
+    padding: 10px 25px;
+    background-color: transparent;
+}
+
+.btn-border-black:hover {
+    color: #fff;
+    border-color: #333;
+    background-color: #333;
+}
+
+.btn-border-theme:hover {
+    color: #fff;
+    border-color: #03a9f4;
+    background-color: #03a9f4;
+}
+
+.modal-content{
+    z-index: 999999;
+}
+
+.modal-title h1{
+    margin: 0;
+    font-size: 60px;
+}
+
+.modal-body span{
+    font-size: 16px;
+    line-height: 3;
 }
 
 .main_footer_inner {
@@ -777,7 +937,7 @@ img{
     }
 
     .section_title h2 {
-        font-size: 23px;
+        font-size: 35px;
         line-height: 32px;
     }
 
@@ -849,7 +1009,7 @@ img{
         width: 38%;
         height: 10px;
         background: #00c2cb;
-        top: 185px;
+        top: 190px;
         left: 12px;
     }
 
@@ -873,6 +1033,11 @@ img{
     .margin_width{
         max-width: 95%;
         margin: 25px auto;
+    }
+
+    .connect h1{
+        font-size: 25px;
+        line-height: 50px;
     }
 
     .main_footer_inner{
@@ -1043,6 +1208,9 @@ img{
     .hero_position_img img{
         max-width: 75%;
     }
+    .connect h1{
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1050px)
@@ -1117,8 +1285,35 @@ img{
     .upcoming_gaming_thumb{
         justify-content: space-evenly;
     }
+
+    .connect h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
-@media (min-width: 1300px)
+@media (min-width: 990px) and (max-width: 1200px)
 {
+    .transformation{
+        transform: translate(0, -267px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px)
+{
+    .transformation{
+        transform: translate(0, -205px);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .transformation{
+        transform: translate(0, -5px);
+    }
+
+    .testimonial_section{
+        margin-top: 0;
+    }
+}
     
