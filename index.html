@@ -77,7 +77,7 @@
     </div>
     </header>
       <section id="Home">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
               <div class="hero_content">
@@ -86,11 +86,11 @@
                 <p>Simply text of the printing and typesetting industry.</p>
                 <div class="play-btn"><a class="btn btn-link " data-wow-delay="0.3s" data-wow-duration="1.3s" href="#" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.3s; animation-name: fadeInUp;">Play Now</a></div>
               </div>
+              <div class="hero_position_img">
+                <img src="hero-position-img.jpg" alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="hero_position_img">
-          <img src="hero-position-img.jpg" alt="">
         </div>
       </section>
       <section class="gaming_section margin_section">
@@ -458,7 +458,7 @@
           <div class="entry-thumb marginbottom">
             <div class="imgoverlay_2 text-light"><img src="gallery-3.jpg" class="img-responsive" alt="website template image">
               <div class="overlay"><span class="overlaycolor"></span>
-                <div class="overlayinfo" style="margin-top:-11px;">
+                <div class="overlayinfo top25" style="margin-top:-11px;">
                   <h6>Just for glimpse</h6>
                   <div class="play-btn-3"><a href="gallery-3.jpg" class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                 </div>
@@ -563,7 +563,7 @@
     </div>
   </section>
   <footer class="footer_widgets">
-    <div class="main_footer" style="background-color: #00c2cb;">
+    <div class="main_footer" style="background-color: #140e38;">
         <div class="container">
             <div class="row padding5">
                 <div class="col-12">
@@ -664,54 +664,7 @@
         </div>
     </div>
 </footer>
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-     
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() 
-        {
-         hamburger.classList.toggle("active");
-         navMenu.classList.toggle("active");
-        }
-     const navLink = document.querySelectorAll(".nav-link");
-     
-     
-     navLink.forEach(n => n.addEventListener("click", closeMenu));
-     
-     function closeMenu() {
-         hamburger.classList.remove("active");
-         navMenu.classList.remove("active");
-     }
-    </script>
-    <script>
-      var menu = document.getElementById("arrow");
-      window.onscroll = function(){scrollit()};
-      function scrollit()
-      {
-        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-        {
-          document.getElementById("header").style.fontSize = "9px";
-          document.getElementById("logo").style.maxWidth = "50%";
-          document.getElementById("header").style.backgroundColor = "rgba(0, 193, 203, 0.6)";
-          document.getElementById("header").style.backgroundBlendMode = "darken";
-          menu.style.display = "block";
-        }
-        else{
-          document.getElementById("header").style.fontSize = "16px";
-          document.getElementById("logo").style.maxWidth = "100%";
-          document.getElementById("header").style.backgroundColor = "#00c2cb";
-          menu.style.display = "none";
-        }
-      }
-    </script>
-    <script>
-      $('.counterup').counterUp({
-        delay: 10,
-        time: 2000
-      });
-      $('.counterup').addClass('animated fadeInDownBig');
-      $('h2').addClass('animated fadeIn');
-    </script>
+    <script src="nav.js"></script>
+    <script src="scroll.js"></script>
+    <script src="counter.js"></script>
 </body>
