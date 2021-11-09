@@ -1100,6 +1100,11 @@ img{
         padding: 0%;
     }
 
+    .upcoming_gaming_text p{
+        font-weight: 600;
+        font-size: 14.6px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 850px)
