@@ -623,9 +623,104 @@ img{
     transform: translateY(-100%);
 }
 
+.price{
+    margin-top: -250px;
+}
+
+.mt30{
+    margin-top: 30px;
+}
+
+.price .item {
+    margin-bottom: 30px;
+    background: rgb(41, 40, 69);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ptb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.color-white{
+    color: white;
+}
+
+.price .item.standart .current-bl {
+    background: rgb(61, 208, 216);
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.lheight-30 {
+    line-height: 30px;
+}
+
+.fweight-700 {
+    font-weight: 700;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.fsize-24{
+    font-size: 24px;
+}
+
+.fsize-48{
+    font-size: 48px;
+}
+
+.fsize-14{
+    font-size: 14px;
+}
+
+.price .item .price-content {
+    padding: 40px 60px;
+}
+
+.price .item .price-content .item-list {
+    border-bottom: 1px solid rgba(194, 212, 248, 0.2);
+    padding: 20px 0px;
+    color: white;
+}
+
+.price .buy-btn{
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid;
+    font-family: "Metal Mania", cursive;
+    font-size: 20px;
+    padding: 10px 30px
+}
+
+.price .buy-btn:hover{
+    background-color: #00c2cb;
+    transition: 0.3s all ease-in-out;
+    border: 2px solid #00c2cb;
+}
+
+.pb60{
+    padding-bottom: 60px;
+}
+
+.price .item.gold .current-bl {
+    background: rgb(92, 157, 221);
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.price .item.platinum .current-bl {
+    background: rgb(124, 105, 227);
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
 .testimonial_section {
     padding: 124px 0 150px;
-    margin-top: -300px;
+    margin-top: ;
     position: relative;
 }
 
@@ -1320,9 +1415,13 @@ img{
         transform: translate(0, -5px);
     }
 
+    .price{
+        margin-top: 0;
+    }
     .testimonial_section{
         margin-top: 0;
     }
+
 }
 
 @media (max-width: 410px)
